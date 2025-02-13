@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv"></div>
+  <script>
+    // Attempting to access a property of null
+    const myElement = document.getElementById('myDiv').getAttribute('data-value');
+    if(myElement !== null){
+      console.log(myElement.toUpperCase());
+    }
+  </script>
+</body>
+</html>
